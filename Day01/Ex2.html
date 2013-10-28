@@ -21,9 +21,14 @@
 			}
 		</script>
 		<style>
+			fieldset {
+				background-color : Yellow;
+			}
 		</style>
 	</head>
 	<body>
+		<fieldset>
+			<legend>Add speaker</legend>
 		Name <input type="text" id="speakertext" 
 				placeholder="firstname lastname"/> <br/>
 		Email <input type="email" id="emailtext"/> <br/>
@@ -31,5 +36,7 @@
 		Talks <input type="number" id="talkstext"/> <br/>
 		Arrival date <input type="date" id="arrivaldatetext"/> <br/>
 		<input type="button" value="Add" onclick="addSpeaker()"/>
+		</fieldset>
+
 	</body>
 </html>
