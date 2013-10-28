@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Ex 2</title>
+		<script>
+			function addSpeaker(){
+				var speaker = 
+					document.getElementById("speakertext").value;
+				var email = 
+					document.getElementById("emailtext").value;
+				var talks = 
+					document.getElementById("talkstext").value;
+				var website = 
+					document.getElementById("websitetext").value;
+				var arrivalDate = 
+					document.getElementById("arrivaldatetext").value;
+				console.log("Name: " + speaker);
+				console.log("Email: " + email);
+				console.log("Website: " + website);
+				console.log("Talks: " + talks);
+				console.log("Arrival date: " + arrivalDate);
+			}
+		</script>
+		<style>
+		</style>
+	</head>
+	<body>
+		Name <input type="text" id="speakertext" 
+				placeholder="firstname lastname"/> <br/>
+		Email <input type="email" id="emailtext"/> <br/>
+		Website <input type="url" id="websitetext"/> <br/>
+		Talks <input type="number" id="talkstext"/> <br/>
+		Arrival date <input type="date" id="arrivaldatetext"/> <br/>
+		<input type="button" value="Add" onclick="addSpeaker()"/>
+	</body>
+</html>

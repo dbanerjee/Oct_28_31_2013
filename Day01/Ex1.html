@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script>
+			function lexmark(){
+				console.log("Lexmark");
+				var name = document.getElementById("nametextbox").value;
+				console.log(name);
+			}
+		</script>
+		<style>
+			h1 {
+				color : Red;
+			}
+			body {
+				background-color : Yellow;
+				font-size : 20px;
+			}
+			#clickbtn  {
+				background-color : Black;
+				color : White;
+			}	
+			#nametextbox {
+				background-color : Blue;
+				color : White;
+			}
+		</style>
+		<title>Ex 1</title>
+	</head>
+	<body>
+		<h1>Add details</h1>
+		Name: <input type="text" id="nametextbox"> <br/>
+		Gender: <br/>
+		Male <input type="radio" name="gender"> 
+		Female <input type="radio" name="gender"> <br/>
+		Newsletter: <input type="checkbox"> <br/>
+		<input type="button" onclick="lexmark();" value="Submit" id="clickbtn"/>
+	</body>	
+</html>
+
+
+
+
+
+
+
